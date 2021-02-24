@@ -19,7 +19,7 @@ public class TrainUserImpl implements TrainUser {
 
 	@Override
 	public boolean newFeature() {
-		return false;
+		return true;
 	}
 
 	@Override

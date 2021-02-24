@@ -54,5 +54,9 @@ public class TrainSystemTest {
 	public void NewFeatureTest() {
 		Assert.assertTrue(user.newFeature());
 	}
-	
+
+	@Test
+	public void NewTest() {
+		Assert.assertTrue(true);
+	}
 }
