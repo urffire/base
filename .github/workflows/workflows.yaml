@@ -1,0 +1,12 @@
+name: workflow
+on: push
+jobs:
+  first:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Dependencies
+        run: npm install
+      - name: build
+        run: npm run build
+
+
