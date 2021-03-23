@@ -1,7 +1,19 @@
-subprojects {
-  apply plugin: 'java'
+plugins {
+  id "org.sonarqube" version "3.1.1"
+}
 
+subprojects { subproject ->
+  apply plugin: 'java'
+  apply plugin: 'org.sonarqube'
   repositories {
     jcenter()
+  }
+}
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "urffire_base"
+    property "sonar.organization", "urffire"
+    property "sonar.host.url", "https://sonarcloud.io"
   }
 }
