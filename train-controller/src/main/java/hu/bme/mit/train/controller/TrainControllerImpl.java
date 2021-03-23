@@ -60,7 +60,7 @@ public class TrainControllerImpl implements TrainController {
 				public void run() {
 					followSpeed();
 				}
-			}, 0, 5*1000);
+			}, 0, 1*1000);
 
 		}
 	}
