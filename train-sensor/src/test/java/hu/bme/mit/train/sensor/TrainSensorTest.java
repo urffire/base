@@ -48,9 +48,11 @@ public class TrainSensorTest {
     }
 
     @Test
+
     public void SpeedLimitRelativeTrue() {
         when(controller.getReferenceSpeed()).thenReturn(50);
         sensor.overrideSpeedLimit(50);
         verify(user).setAlarmState(false);
+
     }
 }
